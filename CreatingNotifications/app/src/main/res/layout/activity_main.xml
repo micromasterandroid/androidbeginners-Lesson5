@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.galileo.micromasterandroid.creatingnotifications.MainActivity"
+    android:layout_margin="@dimen/app_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_a_notificacion_with_a_channel"
+        android:textAlignment="center"
+        android:layout_gravity="center" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_a_message"
+        android:id="@+id/with_channel_message"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/send_the_notification"
+        android:onClick="sendWithChannel"
+        android:id="@+id/with_channel_button"/>
+</LinearLayout>
